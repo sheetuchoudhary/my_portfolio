@@ -1,30 +1,44 @@
 import { useState } from 'react';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
-import Photos from './Photos';  // Import Photos.js
 import my1 from '../image/my.jpg';
-//import my2 from '../image/profile.jpg';
-//import my3 from '../image/my.jpg';
+import my2 from '../image/my3.jpg';
+import my3 from '../image/my1.jpg';
+import "./Imagee.css";
 
 function Imagee() {
-  // State to store selected image
   const [selectedImage, setSelectedImage] = useState(my1);
+  
+  const images = [my1, my2, my3];
 
   return (
-    <Container>
-      <h6>Welcome To My Portfolio</h6>
-      <Row>
-        <Col>
-          {/* Enlarged Image */}
-          <Image src={selectedImage} thumbnail style={{ width: '400px', height: '400px' }} />
-        </Col>
-      </Row>
-      
-      {/* Pass setSelectedImage to Photos */}
-      <Photos setSelectedImage={setSelectedImage} />
-    </Container>
+   
+    <div className="profile-container">
+      {/* Main Image */}
+      <div className="main-image-container">
+        <Image 
+          src={selectedImage} 
+          alt="Portfolio" 
+          className="main-image"
+        />
+      </div>
+
+      {/* Image Navigation */}
+      <div className="image-navigation">
+        {images.map((img, index) => (
+          <div 
+            key={index}
+            className={`thumbnail-container ${img === selectedImage ? 'active' : ''}`}
+            onClick={() => setSelectedImage(img)}
+          >
+            <Image 
+              src={img} 
+              alt={`Thumbnail ${index + 1}`}
+              className="thumbnail-image"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 

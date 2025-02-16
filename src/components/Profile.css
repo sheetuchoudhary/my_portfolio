@@ -1,0 +1,42 @@
+.profile-section {
+    padding: 3rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .profile-content {
+    text-align: left;
+    max-width: 600px;
+  }
+  
+  .welcome-text {
+    font-size: 3.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+  }
+  
+  .name-text {
+    font-size: 2.8rem;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  .divider {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    margin: 2rem 0;
+    width: 100%;
+  }

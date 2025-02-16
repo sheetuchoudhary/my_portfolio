@@ -3,7 +3,7 @@ import Projects from './Projects';
 
 function Projectlist() {
   return (
-    <div className="d-flex flex-wrap justify-content-center">
+    <div className="d-flex flex-wrap justify-content-center gap-2 py-3">
       {Projects.map((Project, index) => (
         <Projectcard 
           key={index}
@@ -12,10 +12,10 @@ function Projectlist() {
           details={Project.details}
           link={Project.link}
           borderColor={Project.borderColor}
+          image={Project.image}
         />
       ))}
     </div>
   );
 }
-
 export default Projectlist;

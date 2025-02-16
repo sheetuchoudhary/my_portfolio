@@ -11,6 +11,8 @@ import Projectlist from './components/Projectlist';
 //import Photos from './components/Photos.js';
 import Footer from "./components/Footer.js";
 import Home from "./components/Home.js";
+//import Myimg from "./components/Myimg.js";
+
 
 import './App.css';
 
@@ -29,11 +31,14 @@ function App() {
             <div className="right-side">
               <div className="route-content">
                 <Routes>
+                  
+                  <Route exact path="/" element={<Home />}/>
                   <Route path="/home" element={<Home />} />
                   <Route path="/about" element={<About />} />
                   <Route path="/skill" element={<Skill />} />
                   <Route path="/projectlist" element={<Projectlist />} />
                   <Route path="/contact" element={<Contact />} />
+                  <Route path="*" element={<Home />} />
                 </Routes>
               </div>
             </div>

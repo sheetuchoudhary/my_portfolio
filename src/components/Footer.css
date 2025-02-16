@@ -1,0 +1,34 @@
+.elegant-footer {
+  background: linear-gradient(to right,rgb(165, 191, 217), #e9ecef);
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-icon {
+    color: #666;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: translateY(-2px);
+  }
+
+.linkedin-icon { color: #0077b5; }
+.telegram-icon { color: #0088cc; }
+.github-icon { color: #333; }
+.instagram-icon { color: #e4405f; }
+  
+  .footer-text {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  

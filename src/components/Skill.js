@@ -1,44 +1,61 @@
-import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap Import
-import "./Skill.css"; // Custom Styling
+import React from 'react';
+import { ProgressBar } from 'react-bootstrap';
+import "./Skill.css";
 
-export default class Skill extends Component {
-  render() {
-    return (
-      <div>
-        <h3 className="text-dark">Skills</h3>
+const Skill = () => {
+  const programmingSkills = [
+    { name: "C++", progress: 75 },
+    { name: "Python", progress: 70 },
+    { name: "SQL", progress: 70 },
+    { name: "C", progress:65}
+  ];
+
+  const softSkills = [
+    "Leadership & Collaboration",
+    "Effective Communication",
+    "Problem-Solving",
+    "Mentoring & Guidance",
+    "Adaptability & Ethics"
+  ];
+
+  return (
+    <div className="skill-section">
+      <h3 className="section-title">Skills</h3>
       <div className="skill-container">
-      
-        <div className="card shadow-lg p-4">
-          
-
-          <div className="row mt-3">
-            {/* Left Side: Programming Skills */}
+        <div className="skill-card">
+          <div className="row">
             <div className="col-md-6">
-              <h4 className="text-dark">Programming Skills</h4>
-              <ul className="list-group">
-                <li className="list-group-item">C++</li>
-                <li className="list-group-item">Python</li>
-                <li className="list-group-item">SQL</li>
-              </ul>
+              <h4 className="skill-category">Programming Skills</h4>
+              <div className="skill-list">
+                {programmingSkills.map((skill, index) => (
+                  <div key={index} className="skill-item">
+                    <p className="skill-name">{skill.name}</p>
+                    <ProgressBar 
+                      now={skill.progress} 
+                      label={`${skill.progress}%`}
+                      variant="info" 
+                      animated
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
 
-            {/* Right Side: Soft Skills */}
             <div className="col-md-6">
-              <h4 className="text-dark">Soft Skills</h4>
-              <ul className="list-group">
-                <li className="list-group-item">Leadership & Collaboration</li>
-                <li className="list-group-item">Effective Communication</li>
-                <li className="list-group-item">Problem-Solving</li>
-                <li className="list-group-item">Mentoring & Guidance</li>
-                <li className="list-group-item">Adaptability & Ethics</li>
-              </ul>
+              <h4 className="skill-category">Soft Skills</h4>
+              <div className="soft-skills-list">
+                {softSkills.map((skill, index) => (
+                  <div key={index} className="soft-skill-item">
+                    {skill}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-
         </div>
       </div>
-      </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default Skill;

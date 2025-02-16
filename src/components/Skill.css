@@ -1,23 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+.skill-section {
+  border-radius:10px;
+  margin: 4rem auto 0;
+  padding: 2rem 2rem;
+  background: linear-gradient(to right,rgb(165, 191, 217), #e9ecef);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
 
 .skill-container {
-  font-family: 'Poppins', sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  
 }
 
-.card {
-  max-width: 800px;
-  width: 100%;
-  border-radius: 12px;
-  background: #adc3da;
+.skill-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.list-group-item {
-  border: none;
-  background: #fff;
-  padding: 8px;
+.skill-category {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.skill-item {
+  margin-bottom: 1.5rem;
+}
+
+.skill-name {
   font-weight: 500;
+  color: #34495e;
+  margin-bottom: 0.5rem;
 }
 
-.text-dark {
-  font-weight: 600;
+.progress {
+  height: 1.5rem !important;
+  background-color: #f0f3f6 !important;
+  border-radius: 1rem !important;
+}
+
+.progress-bar {
+  background: linear-gradient(to right, #3498db, #2ecc71) !important;
+}
+
+.soft-skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.soft-skill-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.soft-skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }

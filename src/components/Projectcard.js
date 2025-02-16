@@ -1,19 +1,36 @@
+import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Ptitle from './Ptitle';
-import Ptext from './Ptext';
-import Plink from './Plink';
+import { motion } from 'framer-motion';
 
-function Projectcard({ title, description, details, link, borderColor }) {
-    return (
-      <Card className={`border-${borderColor} m-3`} style={{ width: '18rem' }}>
+import './Projectcard.css';
+
+function ProjectCard({ title, description, details, link, borderColor, image }) {
+  return (
+    <div className="Box">
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.2 }}>
+      <Card className={`project-card border-${borderColor}`}>
+        {image && (
+          <Card.Img variant="top" src={image} className="project-image" />
+        )}
         <Card.Body>
-          <Ptitle title={title} />
-          <Ptext text={description} />
-          <Ptext text={details} />
-          <Plink link={link} />
+          <Card.Title className="project-title">{title}</Card.Title>
+          <Card.Text className="project-description">{description}</Card.Text>
+          <Card.Text className="project-details">{details}</Card.Text>
+          <Card.Link 
+            href={link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            More details
+          </Card.Link>
         </Card.Body>
       </Card>
-    );
-  }
-  
-  export default Projectcard;
+    </motion.div>
+    </div>
+  );
+}
+
+export default ProjectCard;
