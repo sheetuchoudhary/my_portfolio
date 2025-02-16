@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sheetuchoudhary.gitub.io/my_portfolio%20/static/css/main.e2c3a136.css",
+    "main.js": "/sheetuchoudhary.gitub.io/my_portfolio%20/static/js/main.bd022ade.js",
+    "static/media/fire.jpg": "/sheetuchoudhary.gitub.io/my_portfolio%20/static/media/fire.6e7d6e5d0b6a3b163fc6.jpg",
+    "static/media/my3.jpg": "/sheetuchoudhary.gitub.io/my_portfolio%20/static/media/my3.4c339af589f0edabe88d.jpg",
+    "static/media/my.jpg": "/sheetuchoudhary.gitub.io/my_portfolio%20/static/media/my.0a180f131b600ce821a6.jpg",
+    "static/media/my1.jpg": "/sheetuchoudhary.gitub.io/my_portfolio%20/static/media/my1.a38b5b9840bebe88da3a.jpg",
+    "static/media/hospital.jpg": "/sheetuchoudhary.gitub.io/my_portfolio%20/static/media/hospital.0527d86b169b86f090e0.jpg",
+    "static/media/fan.jpg": "/sheetuchoudhary.gitub.io/my_portfolio%20/static/media/fan.2bf9d4b373920a92eba9.jpg",
+    "static/media/abc.jpg": "/sheetuchoudhary.gitub.io/my_portfolio%20/static/media/abc.40d7b4d7e527970f05c0.jpg",
+    "index.html": "/sheetuchoudhary.gitub.io/my_portfolio%20/index.html",
+    "main.e2c3a136.css.map": "/sheetuchoudhary.gitub.io/my_portfolio%20/static/css/main.e2c3a136.css.map",
+    "main.bd022ade.js.map": "/sheetuchoudhary.gitub.io/my_portfolio%20/static/js/main.bd022ade.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2c3a136.css",
+    "static/js/main.bd022ade.js"
+  ]
+}
